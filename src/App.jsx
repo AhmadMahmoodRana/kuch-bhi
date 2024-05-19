@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Form from './Components/Form'
 
 const App = () => {
+const [name,setName] = useState("")
+const [cast,setCast] = useState("")
+const [image,setImage] = useState("")
+
+
+
   return (
-    <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+    <div>
+      <Form name={name} setName={setName} cast={cast} setCast={setCast} image={image} setImage={setImage}  />
+    </div>
   )
 }
 
